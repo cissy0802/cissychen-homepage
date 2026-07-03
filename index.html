@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cheng (Cissy) Chen</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel='shortcut icon' type='image/x-icon' href='img/icon/favicon.ico' />
+  <link rel="apple-touch-icon-precomposed" href="img/icon/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/icon/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/icon/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/icon/apple-touch-icon-144x144-precomposed.png">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.easytabs.min.js"></script>
+  <script src="js/vendor/jquery-ui.js"></script>
+
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      window.isMobile = true;
+      document.write('<link rel="stylesheet" href="css/mobile.css">');
+    }
+  </script>
+
+
+
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+
+<body class="bg-fixed bg-1">
+  <!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="#google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+  <div id="load_screen" style="z-index: 100">
+    <div id="loading"></div>
+  </div>
+  <canvas id="main_canvas"></canvas>
+  <input id="unlock_camera_btn" type='button' value='Click To Unlock 3D Scene Camera' />
+  <a id="view_with_pc">View Full Version 3D Website on PC</a>
+  <a id="camera_control_info">3D contents may take seconds to load...<br>Drag to rotate and scroll to zoom in/out</a>
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+      <!-- Header Start -->
+      <header id="header">
+        <div id="logo">
+          <h2>
+            Cheng Chen
+          </h2>
+          <h4>Software Engineer</h4>
+        </div>
+      </header>
+      <!-- Header End -->
+      <!-- Main Tab Container -->
+      <div id="tab-container" class="tab-container">
+        <!-- Tab List -->
+        <ul class='etabs'>
+          <li class='tab' id="tab-about">
+            <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+          </li>
+          <li class='tab'>
+            <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+          </li>
+          <li class='tab' id="tab-portfolio">
+            <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
+          </li>
+          <li class='tab'>
+            <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+          </li>
+        </ul>
+
+        <!-- End Tab List -->
+        <div id="tab-data-wrap">
+          <!-- About Tab Data -->
+          <div id="about">
+            <section class="clearfix">
+              <div class="g2">
+                <div class="photo">
+                  <img src="img/profile/IMG_0619.JPG" alt="Cheng Chen" width="85%" height="270">
+                </div>
+                <div class="info">
+                  <h2>Cheng chen</h2>
+                  <h4>Software Engineer</h4>
+                  <p>  <span style="color: rgb(171, 3, 3);">&#8226;</span> Accomplished Software engineer. 3.5 years’ work experience. Master's degree of Computer Science. <br/>
+                  <span style="color: rgb(171, 3, 3);">&#8226;</span> Proven ability of requirements gathering and analysis, technical design and development. <br/>
+                  <span style="color: rgb(171, 3, 3);">&#8226;</span> Extensive background in full-stack online game and web development. <br/>
+                  <span style="color: rgb(171, 3, 3);">&#8226;</span> Talented in art and strategic thinking, creative and open mind. </p>
+                  <p></p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+              <div class="break"></div>
+              <div class="contact-info">
+                <div class="g1">
+                  <div class="item-box clearfix">
+                    <i class="icon-envelope"></i>
+                    <div class="item-data">
+                      <h3><a href="mailto:chengchen0802@gmail.com">chengchen0802@gmail.com</a></h3>
+                      <p>Email Address</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="g1">
+                  <div class="item-box clearfix">
+                    <i class="icon-linkedin"></i>
+                    <div class="item-data">
+                      <h3><a href="https://www.linkedin.com/pub/cheng-chen/79/630/774">Cheng Chen</a></h3>
+                      <p>LinkedIn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- content -->
+          </div>
+          <!-- End About Tab Data -->
+          <!-- Resume Tab Data -->
+          <div id="resume">
+            <section class="clearfix">
+              <div class="g2">
+                <h3>
+                  Experience
+                </h3>
+                <ul class="no-list work">
+
+                  <h5>
+                    <strong>Software Engineer(Server-End), PLAYSTUDIOS,Inc., 2016-Present</strong>
+                  </h5>
+                  <p class="second_line">
+                    <strong>Shipped Titles: myKONAMI Slots, myVEGAS Slots (iOS/Android/Facebook)
+                      <br>Skills: C#, Python, F#, ASP.NET</strong>
+                    <br>
+                  </p>
+                  <li class="third_line">1. Objective Oriented Designed, developed and maintained over 20 slots games' backend logic,
+which have average of 300K Daily Active Users and creates $130K Revenue per day</li>
+                  <li class="third_line">2. Implemented gambling mathematics algorithms</li>
+                  <li class="third_line">3. Developed dynamic version-controlled configuration for marketing A|B test</li>
+                  <li class="third_line">4. Built AI player simulation testing tools to ensure correctness of mathematics</li>
+                  <li class="third_line">5. Created and exposed REST API</li>
+                  <li class="third_line">6. Diagnosed poor efficiency problems and remodeled code base, improved performance of
+libraries used across projects</li>
+                  <li class="third_line">7. Launched cross-platform games on mobile and web</li>
+                  <h5>
+                    <strong>Software Engineer(Full-Stack), Midnight Studios, Inc., 2015-2016</strong>
+                  </h5>
+                  <p class="second_line">
+                    <strong>Shipped Title: Pinhead Bowling
+                      <br>Skills: C#, Unity3D, SQL, JavaScript, HTML/CSS</strong>
+                    <br>
+                  </p>
+                  <li class="third_line">1. Delivered Xfinity(Comcast) online game from zero</li>
+                  <li class="third_line">2. Implemented interactive mobile HTML5-based game controller: translated human motion data
+to physics model in game engine and displayed as visual effects on TV</li>
+                  <li class="third_line">3. Developed frontend 3D Game logic: including animation, physics, rendering system etc.</li>
+                  <li class="third_line">4. Designed backend user status database by MySQL and handled data streaming</li>
+                  <li class="third_line">5. Scaled system to support massive players</li>
+
+                  <h5>
+                    <strong>Research Assistant, University of Houston, 2013-2015</strong>
+                  </h5>
+                  <p class="second_line">
+                    <strong>Feasibility Study of Avatar Customization and Relatedness on Physical Activity
+                      <br>Individual Project which is granted for an award of $428,700 from NIH
+                      <br>Skills: C++, C#, Python, Unity3D, Maya, OpenGL</strong>
+                    <br>
+                  </p>
+                  <p style="margin-left: 2em">
+                    <strong>Kinect-Based 3D real-time Scan System:  Generate real-person 3D model with multiple-Kinect
+                      <br>(C++ OpenGL/OpenCV/PCL/OpenMesh, .Net (C#) NITE/OpenNI2, MEL Maya Script)</strong>
+                  </p>
+                  <li class="third_line">1. Solved multi-camera USB data bandwidth problem (Hardware setup)</li>
+                  <li class="third_line">2. Captured and processed RGB and depth data from sensor (Mesh and texture generation)</li>
+                  <li class="third_line">3. Developed scan meshes alignment algorithms (Mesh geometry overlay detection and transition)</li>
+                  <li class="third_line">4. Designed template setup feature (Scan time reduction)</li>
+                  <li class="third_line">5. Implemented algorithms to handle meshes combination, smoothing, hole filling, and finalization</li>
+                  <li class="third_line">6. Handled point cloud and texture map generation (RGB images to point texture conversion)</li>
+                  <p style="margin-left: 2em">
+                    <strong>Scanned Model Customization (SMC) Maya Plug-in:  Improve model quality, customize avatar, bind animation and provide connection with game engine (C++, Maya, MEL, Python)</strong>
+                  </p>
+                  <li class="third_line">1. Developed scripts for scanned model initialization (Automatically rotation, scale, transition, mesh triangulation, mesh amount reduction, smoothing and hole filling)</li>
+                  <li class="third_line">2. Implemented customization feature (Avatar personalized customization options, such as accessories and hair styles)</li>
+                  <li class="third_line">3. Converted captured animation loading data (Skeleton binding, skin weight adjusting, key-frame animation loading)</li>
+                  <p style="margin-left: 2em">
+                    <strong>Sensor Based Health Game: Develop an active game for children (C#, Unity3D, Kinect SDK) </strong>
+                  </p>
+                    <li class="third_line">1. Captured real-time motion, analysed motion data(Local/global coordinate transformation, motion data smoothing, environment noise elimination, jump/crouch detection)</li>
+                    <li class="third_line">2. Created game elements (Random map generation, bone-based multi-collider script, collision detection for separate body part, ragdoll, reward/punishment system, cameras, 3D audio)</li>
+                    <li class="third_line">3. Designed and Created game user interface (Low-poly cartoon style 3D models creation, animation creation, human IK, particle and fluid system, game level/scene control, menu)</li>
+                    <li class="third_line">4. Collected motion data for further research (Calorie consumption calculate, activity benefit analysis)</li>
+                    <p style="margin-left: 2em">
+                    <ul>
+                  </ul>
+                  <h3>
+                    Projects
+                  </h3>
+                  <ul class="no-list work">
+                    <li>
+                      <h5><strong>3D Interactive Website: www.cissychen.com</strong></h5>
+                      <p class="second_line">
+                        <strong>Skills: JavaScript, HTML, CSS, WebGL, S3</strong>
+                      </p>
+                      <li class="third_line">1. Designed and created all contents in photoshop and Maya</li>
+                      <li class="third_line">2. Implemented 3D rendering with WebGL</li>
+                      <li class="third_line">3. Developed interactive features, dynamic media (HTML/JavaScript)</li>
+                      <li class="third_line">4. Deployed on Amazon S3</li>
+
+                      <h5><strong>Restaurant recommendation website based on Yelp API</strong></h5>
+                      <p class="second_line">
+                        <strong>Java, Apache Tomcat, MySQL</strong>
+                      </p>
+                      <li class="third_line">1. Developed a web service using Java servlet to fetch restaurant data from Yelp API</li>
+                      <li class="third_line">2. Utilized MySQL to store restaurant information</li>
+                      <li class="third_line">3. Implemented a content-based recommendation algorithm</li>
+                    </li>
+                  </ul>
+
+                </ul>
+                <h3>
+                  Education
+                </h3>
+                <ul class="no-list work">
+                  <li>
+                    <h5><strong>University of Houston, 05/2014</strong></h5>
+
+                    <p><strong>Master, Computer Science</strong> </p>
+
+                    <h5>East China University of Science and Technology,Shanghai, 06/2011</h5>
+
+                    <p> Exchange student to University of Houston 08/2010 – 05/2011</p>
+                    <strong>Bachelor, Computer Science</strong>
+                  </li>
+                </ul>
+
+                <h3>
+                  Publication
+                </h3>
+                <ul class="no-list work">
+                  <li>
+                    <p style="margin-left: 1em"><strong>Debbe T, Dora C, Madhur R, Tanay B, Yuting Z, Cheng C, Yan L., Zhigang D: “Development of a Teen-Focused Exergame” Games Health Journal. PMCID: PMC5073236</strong> </p>
+                  </li>
+                </ul>
+                <h3>
+                  Certification
+                </h3>
+                <ul class="no-list work">
+                  <li>
+                    <p style="margin-left: 1em"><strong>Google Analytics Certification</strong> </p>
+                  </li>
+                </ul>
+                <h3>
+                  Awards
+                </h3>
+                <ul class="no-list work">
+                  <li class="third_line">1. Academic Scholarship, University of Houston, 2011, 2013, 2014</li>
+                  <li class="third_line">2. Outstanding Undergraduate Student of Shanghai, 2011</li>
+                  <li class="third_line">3. Academic Scholarship, ECUST, 2008, 2009, 2010, 2011</li>
+                  <li class="third_line">4. President of Student Union, ECUST, 2008-2010</li>
+                </ul>
+              </div>
+              <div class="g1">
+                <div class="sidebar">
+                  <h3>
+                    Skills
+                  </h3>
+                  <h5>
+                    Programming Language
+                  </h5>
+                  <div class="meter emerald">
+                    <span style="width: 90%">
+                      <span>C#</span>
+                    </span>
+                  </div>
+                  <div class="meter carrot">
+                    <span style="width:90%">
+                      <span>Java</span>
+                    </span>
+                  </div>
+                  <div class="meter asbestos">
+                    <span style="width: 75%">
+                      <span>Python</span>
+                    </span>
+                  </div>
+                  <div class="meter blue">
+                    <span style="width: 60%">
+                      <span>F#</span>
+                    </span>
+                  </div>
+                  <div class="meter pomengrate">
+                    <span style="width: 65%">
+                      <span>JavaScript</span>
+                    </span>
+                  </div>
+                  <div class="meter carrot">
+                    <span style="width: 50%">
+                      <span>C++/C</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 80%">
+                      <span>HTML/CSS</span>
+                    </span>
+                  </div>
+                  <div class="meter wisteria">
+
+                  <div class="break"></div>
+
+                  <h5>Software Skills</h5>
+
+                  <div class="meter emerald">
+                    <span style="width: 70%">
+                      <span>Server-End</span>
+                    </span>
+                  </div>
+                  <div class="meter pomengrate">
+                    <span style="width: 80%">
+                      <span>Game</span>
+                    </span>
+                  </div>
+                  <div class="meter asbestos">
+                    <span style="width: 60%">
+                      <span>Front-End</span>
+                    </span>
+                  </div>
+                  <div class="meter wisteria">
+                    <span style="width: 65%">
+                      <span>Network</span>
+                    </span>
+                  </div>
+                  <div class="meter blue">
+                    <span style="width: 70%">
+                      <span>DataBase</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 80%">
+                      <span>Test</span>
+                    </span>
+                  </div>
+                  <div class="break"></div>
+
+                  <h5>Web Skills</h5>
+
+                  <div class="meter pomengrate">
+                    <span style="width: 60%">
+                      <span>AngularJS</span>
+                    </span>
+                  </div>
+                  <div class="meter asbestos">
+                    <span style="width: 60%">
+                      <span>node.js</span>
+                    </span>
+                  </div>
+                  <div class="meter wisteria">
+                    <span style="width: 80%">
+                      <span>BootStrap</span>
+                    </span>
+                  </div>
+                  <div class="meter emerald">
+                    <span style="width: 75%">
+                      <span>three.js</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 85%">
+                      <span>WebGL</span>
+                    </span>
+                  </div>
+                  <div class="meter carrot">
+                    <span style="width: 65%">
+                      <span>UI Design</span>
+                    </span>
+                  </div>
+                  <div class="break"></div>
+
+                  <h5>Game Development</h5>
+                  <div class="meter emerald">
+                    <span style="width: 85%">
+                      <span>Unity 3D</span>
+                    </span>
+                  </div>
+                  <div class="meter carrot">
+                    <span style="width: 80%">
+                      <span>Kinect Game</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 65%">
+                      <span>Cocos2D</span>
+                    </span>
+                  </div>
+                  <div class="meter midnight">
+                    <span style="width: 65%">
+                      <span>Multiplatform Game</span>
+                    </span>
+                  </div>
+                  <div class="meter pomengrate">
+                    <span style="width: 50%">
+                      <span>Augmented Reality</span>
+                    </span>
+                  </div>
+
+                  <div class="break"></div>
+                  <h5>
+                    2D Design
+                  </h5>
+                  <div class="meter emerald">
+                    <span style="width: 85%">
+                      <span>Photoshop</span>
+                    </span>
+                  </div>
+                  <div class="meter blue">
+                    <span style="width: 40%">
+                      <span>Illustrator</span>
+                    </span>
+                  </div>
+                  <div class="meter carrot">
+                    <span style="width: 60%">
+                      <span>After Effects</span>
+                    </span>
+                  </div>
+
+                  <div class="break"></div>
+                  <h5>
+                    3D Design
+                  </h5>
+                  <div class="meter wisteria">
+                    <span style="width: 90%">
+                      <span>Maya</span>
+                    </span>
+                  </div>
+                  <div class="meter blue">
+                    <span style="width: 60%">
+                      <span>3ds Max</span>
+                    </span>
+                  </div>
+                  <div class="meter emerald">
+                    <span style="width: 50%">
+                      <span>Mudbox</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 60%">
+                      <span>Zbrush</span>
+                    </span>
+                  </div>
+                  <div class="meter asbestos">
+                    <span style="width: 70%">
+                      <span>Motion Builder</span>
+                    </span>
+                  </div>
+                  <div class="break"></div>
+
+
+                  <h5>
+                    Relevant Courses
+                  </h5>
+                  <div class="meter emerald">
+                    <span style="width: 70%">
+                      <span>Game Art and Animation</span>
+                    </span>
+                  </div>
+                  <div class="meter pomengrate">
+                    <span style="width: 75%">
+                      <span>Game Development</span>
+                    </span>
+                  </div>
+                  <div class="meter carrot">
+                    <span style="width: 90%">
+                      <span>Computer Graphics</span>
+                    </span>
+                  </div>
+                  <div class="meter wisteria">
+                    <span style="width: 80%">
+                      <span>Animation and Simulation</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 85%">
+                      <span>Digital Image Processing</span>
+                    </span>
+                  </div>
+                  <div class="meter asbestos">
+                    <span style="width: 60%">
+                      <span>Computer Networks</span>
+                    </span>
+                  </div>
+
+                  <div class="meter emerald">
+                    <span style="width: 70%">
+                      <span>Machine Learning</span>
+                    </span>
+                  </div>
+                  <div class="meter blue">
+                    <span style="width: 65%">
+                      <span>Computer Architecture</span>
+                    </span>
+                  </div>
+                  <div class="break"></div>
+
+                  <h5>
+                    Speaking Language
+                  </h5>
+                  <div class="meter asbestos">
+                    <span style="width: 70%">
+                      <span>English</span>
+                    </span>
+                  </div>
+                  <div class="meter pomengrate">
+                    <span style="width: 100%">
+                      <span>Chinese</span>
+                    </span>
+                  </div>
+
+                  <div class="break"></div>
+                  <h5>
+                    Other
+                  </h5>
+                  <div class="meter wisteria">
+                    <span style="width: 90%">
+                      <span>Cooking</span>
+                    </span>
+                  </div>
+                  <div class="meter blue">
+                    <span style="width: 80%">
+                      <span>Sports</span>
+                    </span>
+                  </div>
+                  <div class="meter emerald">
+                    <span style="width: 70%">
+                      <span>Crafts</span>
+                    </span>
+                  </div>
+                  <div class="meter sunflower">
+                    <span style="width: 60%">
+                      <span>Music</span>
+                    </span>
+                  </div>
+                  <div class="meter pomengrate">
+                    <span style="width: 100%">
+                      <span>Being Awesome!!!</span>
+                    </span>
+                  </div>
+                  <div class="break"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- End Resume Tab Data -->
+          <!-- Portfolio Tab Data -->
+          <div id="portfolio">
+            <section id="page_layers" class="clearfix">
+              <div id="popup_layers" class="g1">
+                <canvas id="popup_canvas">
+                  <p>Your browser doesn't support canvas.</p>
+                </canvas>
+                <img id="motion" src="img/profile/three/motion.gif" />
+                <img id="view_btn" src=" img/profile/three/view_btn.png" />
+                <img id="demo_btn" src=" img/profile/scan/demo.png" />
+                <div class="video_layers">
+                  <video id="scan_video" class="videos" loop>
+                    <source src="video/CreateAvatar.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                    <source src="video/CreateAvatar.webm" type='video/webm'>
+                    <source src="video/CreateAvatar.mp4" type='video/mp4'>
+                    <p>Video is not visible, most likely your browser does not support HTML5 video</p>
+                  </video>
+                  <video id="plugin_video" class="videos" loop>
+                    <source src="video/Dancing.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                    <source src="video/Dancing.webm" type='video/webm'>
+                    <source src="video/Dancing.mp4" type='video/mp4'>
+                    <p>Video is not visible, most likely your browser does not support HTML5 video</p>
+                  </video>
+                  <video id="game_video" class="videos" loop>
+                    <source src="video/JumpingGameVideo.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                    <source src="video/JumpingGameVideo.webm" type='video/webm'>
+                    <source src="video/JumpingGameVideo.mp4" type='video/mp4'>
+                    <p>Video is not visible, most likely your browser does not support HTML5 video</p>
+                  </video>
+                </div>
+                <img id="close_btn" class="canvas_btns" src="img/close.png">
+                <img id="previous_btn" class="canvas_btns" src="img/previous.png">
+                <img id="next_btn" class="canvas_btns" src="img/next.png">
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="scan" src="img/profile/Profile1.jpg">
+                </div>
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="plugin" src="img/profile/Profile2.jpg">
+                </div>
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="game" src="img/profile/Profile3.jpg">
+                </div>
+              </div>
+              <div class="break"></div>
+              <div class="g1">
+                <div class="image">
+                  <img id="web" src="img/profile/Profile4.jpg">
+                </div>
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="three" src="img/profile/Profile5.jpg">
+                </div>
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="bowling" src="img/profile/Profile6.jpg">
+                </div>
+              </div>
+              <div class="break"></div>
+              <div class="g1">
+                <div class="image">
+                  <img id="two" src="img/profile/Profile7.jpg">
+                </div>
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="cook" src="img/profile/Profile8.jpg">
+                </div>
+              </div>
+              <div class="g1">
+                <div class="image">
+                  <img id="awesome" src="img/profile/Profile9.jpg">
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- End Portfolio Data -->
+          <!-- Contact Tab Data -->
+          <div id="contact">
+            <section class="clearfix">
+              <div class="g1">
+                <div class="sny-icon-box">
+                  <div class="sny-icon">
+                    <i class="icon-globe"></i>
+                  </div>
+                  <div class="sny-icon-content">
+                    <h4>My Address</h4>
+                    <p>Greater Seattle Area, WA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="g1">
+                <div class="sny-icon-box">
+                  <div class="sny-icon">
+                    <i class="icon-envelope"></i>
+                  </div>
+                  <div class="sny-icon-content">
+                    <h4>Email</h4>
+                    <p><a href="mailto:chengchen0802@gmail.com">chengchen0802@gmail.com</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="break"></div>
+
+            </section>
+          </div>
+          <!-- End Contact Data -->
+        </div>
+      </div>
+      <!-- End Tab Container -->
+      <footer>
+        <p> 凡心所向， 素履以往。 生如逆旅， 一苇以航。 </p>
+      </footer>
+    </div>
+    <!-- #main -->
+  </div>
+  <!-- #main-container -->
+
+  <script>
+    if (window.isMobile) {
+      //        window.isMobile = true;
+      //        document.write('<link rel="stylesheet" href="css/mobile.css">');
+    } else {
+      var DEBUG = true;
+      document.write('<scr' + 'ipt type="text/javascript" src="js/webgl-utils.js"></sc' + 'ript>');
+      document.write('<scr' + 'ipt type="text/javascript" src="js/inka3d/engine.js"></sc' + 'ript>');
+      document.write('<scr' + 'ipt type="text/javascript" src="js/inka3d/control.js"></sc' + 'ript>');
+      document.write('<scr' + 'ipt type="text/javascript" src="lotus.js"></sc' + 'ript>');
+      document.write('<scr' + 'ipt type="text/javascript" src="lotus_free_camera.js"></sc' + 'ript>');
+      document.write('<scr' + 'ipt type="text/javascript" src="girl.js"></sc' + 'ript>');
+      document.write('<scr' + 'ipt type="text/javascript" src="js/3d.js"></sc' + 'ript>');
+    }
+  </script>
+
+
+</body>
+
+</html>
