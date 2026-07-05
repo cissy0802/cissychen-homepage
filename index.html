@@ -142,19 +142,6 @@
           <div id="resume">
             <section class="clearfix">
               <div class="g2 resume-col">
-                <div class="domains">
-                  <span class="dh">Domain Expertise</span>
-                  <span class="label label-danger">Security</span>
-                  <span class="label label-info">Privacy</span>
-                  <span class="label label-success">Compliance</span>
-                  <span class="label label-default">GDPR</span>
-                  <span class="label label-default">ITAR / Export Control</span>
-                  <span class="label label-default">FedRAMP / DoD</span>
-                  <span class="label label-warning">Reliability</span>
-                  <span class="label label-danger">AI / Agent Safety</span>
-                  <span class="label label-info">Data Governance</span>
-                  <span class="label label-success">Privileged Access Mgmt</span>
-                </div>
                 <h3>
                   Experience
                 </h3>
@@ -167,7 +154,6 @@
                     <li>Lead BigQuery's AI-native transformation across an 800+ engineer org; co-founded the "Geminize BQ" GenAI incubator and ran an org-wide "Skill-it Week."</li>
                     <li>Designed the AI risk-based code-review gate that scores each change's production risk and enforces policy-as-code.</li>
                     <li>Built risk-aware release automation for BigQuery's rollout/rollback system.</li>
-                    <li>Co-built an <strong>agent-safety guardrail</strong> for AI coding agents: a C++ AST interceptor, sandboxed dry-run evaluator, and hardware-key verification for destructive operations.</li>
                     <li>Built an agentic Admin Access control, replacing manual production actions with peer-reviewed, reusable agent scripts.</li>
                     <li>Built an automated <strong>data-classification / PII</strong> system (policy-as-code): 200+ PRs across 6,000+ fields.</li>
                     <li>Secured GCP <strong>Privacy Working Group</strong> approval to connect GenAI agents to production telemetry for debugging and root-cause analysis.</li>
@@ -178,6 +164,7 @@
                     <li>Founded and tech-led "Prod is Lava," a cross-org <strong>reliability &amp; access-governance</strong> program that became a GCP-wide Code Yellow mandate (60 contributors, 6 orgs).</li>
                     <li>Cut standing <strong>privileged access</strong> 91% via Just-in-Time <strong>least-privilege</strong> grants; reduced highest-risk principals from 87 to 9.</li>
                     <li>Built a real-time reliability &amp; risk dashboard adopted org-wide.</li>
+                    <li>Designed and built a <strong>reverse proxy for prod/nonprod traffic isolation</strong>, enforcing a clean boundary between production and non-production environments.</li>
                     <li>Led the Code Yellow "global pushes" workstream, regionalizing global dependencies across 10+ services to enable data residency.</li>
                   </ul>
 
