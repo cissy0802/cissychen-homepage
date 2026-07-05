@@ -362,7 +362,11 @@ function loadPortfolio(){
     init();
 }
 $(function() {
-    loadPortfolio();
+    // Portfolio gallery removed — the "Learning Hub" tab now embeds cissy0802.github.io.
+    // loadPortfolio() intentionally not called (its DOM/canvas no longer exists).
+    if (document.getElementById('popup_canvas')) {
+        loadPortfolio();
+    }
 });
 
 
