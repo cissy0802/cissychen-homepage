@@ -59,3 +59,7 @@
   padding:.72em 1.4em;border-radius:7px;box-shadow:0 3px 0 #c0392b;transition:transform .08s ease,box-shadow .08s ease,background .12s ease}
 .btn-hub:hover{background:#c0392b;color:#fff !important;transform:translateY(2px);box-shadow:0 1px 0 #a93226}
 .btn-hub i{margin-right:.45em}
+
+/* Footer hub link */
+.footer-hub{margin:.4em 0 0;font-size:.9em;color:#666}
+.footer-hub i{color:#c0392b;margin-right:.3em}
