@@ -69,3 +69,6 @@
 .tab{margin-right:6px}
 .tab a{white-space:nowrap}
 @media only screen and (min-width:1024px){ .tab a{padding:10px 20px} }
+
+/* About contact boxes: all four (Email, LinkedIn, Location, Résumé) in one row */
+@media only screen and (min-width:768px){ .contact-info .g1{width:23%} }
