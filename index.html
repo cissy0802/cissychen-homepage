@@ -28,6 +28,13 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* Critical (inlined so it can't be stale-cached separately from this HTML):
+       hide inactive tab panels until easytabs runs, so the page never shows all
+       four panels stacked while the large 3D scripts are still loading. */
+    #tab-data-wrap > div { display: none; }
+    #tab-data-wrap > #about { display: block; }
+  </style>
   <script>
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       window.isMobile = true;
