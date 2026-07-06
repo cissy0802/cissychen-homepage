@@ -34,3 +34,9 @@
 .resume-col .domains .dh{display:block;margin:0 0 .5em;font-size:.82em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#444}
 .resume-col .domains .label{display:inline-block;margin:0 .35em .5em 0;font-size:.82em;padding:.35em .7em}
 .resume-col .bullets strong{color:#c0392b;font-weight:700}
+
+/* Prevent tab panels from stacking before/without JS (easytabs runs after the
+   large 3D scripts load, which on slow connections leaves all panels visible).
+   Show only About by default; easytabs toggles inline display once it runs. */
+#tab-data-wrap > div { display: none; }
+#tab-data-wrap > #about { display: block; }
