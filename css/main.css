@@ -40,3 +40,10 @@
    Show only About by default; easytabs toggles inline display once it runs. */
 #tab-data-wrap > div { display: none; }
 #tab-data-wrap > #about { display: block; }
+
+/* Skill-bar grow animation via pure CSS (replaces the old JS width-measuring in
+   main.js, which broke once the Resume panel became display:none until opened).
+   Bars keep their static inline width:% (always correct); this just grows them
+   from 0 each time the Resume panel is rendered. */
+@keyframes meter-grow { from { width: 0; } }
+.meter > span { animation: meter-grow 1200ms ease-out; }

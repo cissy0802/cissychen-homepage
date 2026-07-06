@@ -1,11 +1,5 @@
 $(function() {
-  function t() {
-    $(".meter > span").each(function() {
-      $(this).data("origWidth", $(this).width()).width(0).animate({
-        width: $(this).data("origWidth")
-      }, 1200)
-    })
-  }
+  function t() {} // skill-bar grow is handled by a pure-CSS animation (main.css: .meter>span / @keyframes meter-grow); JS width-measuring was unreliable because the Resume panel is display:none until its tab opens
   var i = $("#logo"); - 1 != location.href.indexOf("#") && "#about" != location.href.substr(location.href.indexOf("#")) && i.show(), $("#tab-container .tab a").click(function() {
     i.slideDown("slow")
   }), $("#tab-about").click(function() {
@@ -17,7 +11,7 @@ $(function() {
     transitionOut: "slideUp",
     animationSpeed: 600,
     tabActiveClass: "active"
-  }).bind("easytabs:midTransition", function(i, a, n) {
-    "#resume" == n.selector && t()
+  }).bind("easytabs:after", function() {
+    t()
   });
 });
